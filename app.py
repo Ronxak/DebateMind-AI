@@ -214,7 +214,7 @@ def _render_result(result: dict) -> None:
                 st.markdown("")
 
     st.markdown("---")
-    st.subheader("🧠 Final Judgment")
+    st.subheader("Final Judgment")
     st.markdown(
         """
         <div style="background-color:#f2f2f2;border:1px solid #d3d3d3;padding:16px;border-radius:10px;color:#111111;">
@@ -230,7 +230,7 @@ def _render_result(result: dict) -> None:
     transcript = _build_transcript(result)
     filename = f"debate_transcript_{_safe_filename(result['topic'])}.txt"
     st.download_button(
-        "⬇️ Download Transcript",
+        "Download Transcript",
         data=transcript,
         file_name=filename,
         mime="text/plain",
@@ -353,7 +353,7 @@ if st.session_state.latest_result:
 
 if st.session_state.debate_history:
     st.markdown("---")
-    st.subheader("🗂️ Session Debate History")
+    st.subheader("Session Debate History")
     for idx, item in enumerate(st.session_state.debate_history, start=1):
         with st.expander(f"{idx}. {item['topic']} ({item['timestamp']})", expanded=False):
             st.write(f"**Rounds:** {item['rounds']}")
