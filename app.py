@@ -286,7 +286,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<h1 class="main-title">DebateMind AI - Multi-Agent Debate System</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-title">DebateMind AI</h1>', unsafe_allow_html=True)
 st.markdown(
     '<p class="main-caption">Structured multi-agent debate with a final neutral judgment.</p>',
     unsafe_allow_html=True,
